@@ -167,9 +167,9 @@
 
 
    function tooltip_html(fips){
-    let margin={x:30,y:0}
+    let margin={x:30,y:0}history_dems
     let plot_height = 90
-    let history_dems = election_data[fips]['dems']
+    let  = election_data[fips]['dems']
     let history_gop = election_data[fips]['gop']
     let extent = d3.extent([history_dems,history_gop].flat(),function (d){return d})
     let xScale=d3.scaleLinear().domain([2006,2020]).range([0,150])
